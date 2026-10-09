@@ -1,0 +1,56 @@
+{
+  "name": "cosmos-ai",
+  "productName": "Cosmos AI",
+  "version": "1.0.0",
+  "description": "Cosmos AI — programmation et réels d'essai pour artistes",
+  "author": "Toxic Twins",
+  "main": "main.js",
+  "build": {
+    "appId": "fr.cosmosrecords.cosmosai",
+    "productName": "Cosmos AI",
+    "copyright": "Toxic Twins — Germain Pataille",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "build/icon.png"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Cosmos AI",
+      "artifactName": "Cosmos-AI-Installation.${ext}",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "language": "1036"
+    },
+    "electronLanguages": [
+      "fr",
+      "en-US"
+    ],
+    "compression": "maximum",
+    "portable": {
+      "artifactName": "Cosmos-AI.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "44.4.3",
+    "electron-builder": "26.16.1"
+  }
+}

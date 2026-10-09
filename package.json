@@ -1,7 +1,7 @@
 {
   "name": "cosmos-ai",
   "productName": "Cosmos AI",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Cosmos AI — programmation et réels d'essai pour artistes",
   "author": "Toxic Twins",
   "main": "main.js",
